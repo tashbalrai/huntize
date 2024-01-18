@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Header from '@components/header'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -17,7 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="grid grid-cols-12 gap-2">{children}</main>
+        <main>
+          <Header/>
+          
+          {children}
+        </main>
       </body>
     </html>
   )
