@@ -13,3 +13,16 @@ export const widthToGridSize = (width: number): number => {
     }
     return GridSize.One;
 };
+
+export const getBorderClass = (count: number, size: GridSize): string => {
+    if (size === GridSize.One) {
+        return "";
+    }
+    const rem = count % size;
+    if (rem === 0) {
+        return "border-l";
+    } else if (rem === 1) {
+        return "border-r";
+    }
+    return "border-x";
+};

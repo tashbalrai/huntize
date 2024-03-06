@@ -1,12 +1,14 @@
 "use client";
-import React, { useEffect, useContext } from "react";
+import React, { useEffect } from "react";
 import { Inter } from "next/font/google";
-import { ThemeContext } from "@/contexts/ThemeContext";
+import { useThemeContext } from "@/contexts/ThemeContext";
 import { widthToGridSize } from "@/helpers/theme/theme";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Root({ children }: { children: React.ReactNode }) {
+    const theme = useThemeContext();
+
     useEffect(() => {
         window.addEventListener("resize", handleResizeEvent);
         return () => {
@@ -15,14 +17,13 @@ export default function Root({ children }: { children: React.ReactNode }) {
     });
 
     const handleResizeEvent = (e: Event) => {
-        widthToGridSize(window.innerWidth);
+        const size = widthToGridSize(window.innerWidth);
+        theme?.setGridSize?.(size);
     };
 
     return (
-        <ThemeContext.Provider value={null}>
-            <body className={inter.className}>
-                <main>{children}</main>
-            </body>
-        </ThemeContext.Provider>
+        <body className={inter.className}>
+            <main>{children}</main>
+        </body>
     );
 }

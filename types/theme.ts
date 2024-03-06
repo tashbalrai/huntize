@@ -15,6 +15,6 @@ export enum GridSize {
 export default interface Theme {
     theme: ThemeColor;
     gridSize: GridSize;
-    setGridSize: (size: GridSize) => void;
-    setTheme: (theme: ThemeColor) => void;
+    setGridSize?: (size: GridSize) => void;
+    setTheme?: (theme: ThemeColor) => void;
 }

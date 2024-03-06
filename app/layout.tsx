@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Root from "@/components/root";
 import Header from "@/components/header";
+import { ThemeContextProvider } from "@/contexts/ThemeContext";
 
 export const metadata: Metadata = {
     title: "Huntize",
@@ -15,9 +16,11 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <Root>
-                <Header />
-            </Root>
+            <ThemeContextProvider>
+                <Root>
+                    <Header />
+                </Root>
+            </ThemeContextProvider>
         </html>
     );
 }
