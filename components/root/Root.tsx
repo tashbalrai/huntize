@@ -9,7 +9,7 @@ export default function Root({ children }: { children: React.ReactNode }) {
     const theme = useThemeContext();
     return (
         <body className={`${inter.variable} font-sans max-w-`}>
-            <main className="container mx-auto">{children}</main>
+            <main className="desktop:container mx-auto">{children}</main>
         </body>
     );
 }
