@@ -2,7 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    :root {
+        --body-bg-color: #f5f7fa;
+        --text-h-color: #000000;
+        --text-p-color: #302f2f;
+    }
+
+    html[data-theme="dark"] {
+        --body-bg-color: #f5f7fa;
+        --text-h-color: #000000;
+        --text-p-color: #302f2f;
+    }
+}
+
 body {
-    color: rgb(var(--foreground-rgb));
-    background: #f5f7fa;
+    color: var(--text-p-color);
+    background: var(--body-bg-color);
 }

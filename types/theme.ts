@@ -1,20 +1,27 @@
-export enum ThemeColor {
+import React from "react";
+
+export enum IThemeColor {
     White = "white",
     Black = "black",
     Blue = "blue",
     Orange = "orange",
 }
 
-export enum GridSize {
+export enum IGridSize {
     One = 1,
     Two = 2,
     Three = 3,
     Four = 4,
 }
 
-export default interface Theme {
-    theme: ThemeColor;
-    gridSize: GridSize;
-    setGridSize?: (size: GridSize) => void;
-    setTheme?: (theme: ThemeColor) => void;
+export default interface ITheme {
+    theme: IThemeColor;
+    gridSize: IGridSize;
+    setGridSize?: (size: IGridSize) => void;
+    setTheme?: (theme: IThemeColor) => void;
+}
+
+export interface ITextTag {
+    children: React.ReactNode;
+    className?: string;
 }

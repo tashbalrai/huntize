@@ -28,6 +28,13 @@ const config: Config = {
                 "text-black": "#000000",
                 "text-yellow": "#EDEF4E",
             },
+            height: {
+                hb: "6.25rem",
+                ab: "35.938rem",
+            },
+        },
+        fontFamily: {
+            sans: ["var(--font-inter)"],
         },
     },
     plugins: [],

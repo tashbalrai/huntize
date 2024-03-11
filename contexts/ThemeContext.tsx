@@ -1,10 +1,10 @@
 "use client";
 import React, { createContext, useContext, useState } from "react";
-import Theme, { GridSize, ThemeColor } from "@/types/theme";
+import ITheme, { IGridSize, IThemeColor } from "@/types/theme";
 
-const ThemeContext = createContext<Theme>({
-    theme: ThemeColor.White,
-    gridSize: GridSize.One,
+const ThemeContext = createContext<ITheme>({
+    theme: IThemeColor.White,
+    gridSize: IGridSize.One,
 });
 
 export const ThemeContextProvider = ({
@@ -12,8 +12,8 @@ export const ThemeContextProvider = ({
 }: {
     children: React.ReactNode;
 }) => {
-    const [theme, setTheme] = useState(ThemeColor.White);
-    const [gridSize, setGridSize] = useState(GridSize.Four);
+    const [theme, setTheme] = useState(IThemeColor.White);
+    const [gridSize, setGridSize] = useState(IGridSize.Four);
 
     return (
         <ThemeContext.Provider
