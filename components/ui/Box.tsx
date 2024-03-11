@@ -1,14 +1,9 @@
 "use client";
 import { useThemeContext } from "@/contexts/ThemeContext";
+import { IBox } from "@/types/blog";
 import React from "react";
 
-interface IProp {
-    height?: string;
-    width?: string;
-    children: React.ReactNode;
-}
-
-export default function BorderBox({ children, height = "h-[36rem]" }: IProp) {
+const Box = ({ children, height }: IBox) => {
     const theme = useThemeContext();
 
     return (
@@ -18,4 +13,6 @@ export default function BorderBox({ children, height = "h-[36rem]" }: IProp) {
             </div>
         </div>
     );
-}
+};
+
+export { Box as default, Box };

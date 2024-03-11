@@ -1,18 +1,22 @@
 import { ITextTag } from "@/types/theme";
 
 export const P1Tag = ({ children, className }: ITextTag) => {
-    return <p className={`text-xl font-normal ${className}`}>{children}</p>;
+    return <p className={`text-2xl font-bold ${className}`}>{children}</p>;
 };
 
 export const P2Tag = ({ children, className }: ITextTag) => {
-    return <p className={`text-lg font-normal ${className}`}>{children}</p>;
+    return <p className={`text-xl font-normal ${className}`}>{children}</p>;
 };
 
 export const P3Tag = ({ children, className }: ITextTag) => {
-    return <p className={`text-sm font-normal ${className}`}>{children}</p>;
+    return <p className={`text-lg font-medium ${className}`}>{children}</p>;
 };
 
 export const P4Tag = ({ children, className }: ITextTag) => {
+    return <p className={`text-sm font-normal ${className}`}>{children}</p>;
+};
+
+export const P5Tag = ({ children, className }: ITextTag) => {
     return <p className={`text-xs font-normal ${className}`}>{children}</p>;
 };
 
@@ -35,9 +39,7 @@ export const H3Tag = ({ children, className }: ITextTag) => {
 };
 
 export const H4Tag = ({ children, className }: ITextTag) => {
-    return (
-        <h4 className={`text-4xl font-extrabold ${className}`}>{children}</h4>
-    );
+    return <h4 className={`text-4xl font-bold ${className}`}>{children}</h4>;
 };
 
 export const H5Tag = ({ children, className }: ITextTag) => {
