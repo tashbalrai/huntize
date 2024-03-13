@@ -7,9 +7,15 @@ export default function Header() {
         <header>
             <Grid>
                 <Box height="h-hb">Huntize</Box>
-                <Box height="h-hb">Huntize</Box>
-                <Box height="h-hb">Huntize</Box>
-                <Box height="h-hb">Huntize</Box>
+                <Box height="h-hb" boxClass="max-tablet:hidden">
+                    Huntize
+                </Box>
+                <Box height="h-hb" boxClass="max-laptop:hidden">
+                    Huntize
+                </Box>
+                <Box height="h-hb" boxClass="max-desktop:hidden">
+                    Huntize
+                </Box>
             </Grid>
         </header>
     );

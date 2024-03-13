@@ -22,4 +22,5 @@ export interface IBox {
     height?: string;
     width?: string;
     children: React.ReactNode;
+    boxClass?: string;
 }
