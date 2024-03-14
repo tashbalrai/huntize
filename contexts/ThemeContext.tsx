@@ -4,7 +4,6 @@ import ITheme, { IGridSize, IThemeColor } from "@/types/theme";
 
 const ThemeContext = createContext<ITheme>({
     theme: IThemeColor.White,
-    gridSize: IGridSize.One,
 });
 
 export const ThemeContextProvider = ({
@@ -13,11 +12,11 @@ export const ThemeContextProvider = ({
     children: React.ReactNode;
 }) => {
     const [theme, setTheme] = useState(IThemeColor.White);
-    const [gridSize, setGridSize] = useState(IGridSize.Four);
+    const [windowWidth, setWindowWidth] = useState(0);
 
     return (
         <ThemeContext.Provider
-            value={{ theme, setTheme, gridSize, setGridSize }}
+            value={{ theme, setTheme, windowWidth, setWindowWidth }}
         >
             {children}
         </ThemeContext.Provider>

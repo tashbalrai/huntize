@@ -1,11 +1,11 @@
 "use client";
 
-import { Box, Grid } from "@components/ui";
+import { Box, Flex, Grid } from "@components/ui";
 
 export default function Header() {
     return (
         <header>
-            <Grid>
+            <Flex>
                 <Box height="h-hb">Huntize</Box>
                 <Box height="h-hb" boxClass="max-tablet:hidden">
                     Huntize
@@ -16,7 +16,7 @@ export default function Header() {
                 <Box height="h-hb" boxClass="max-desktop:hidden">
                     Huntize
                 </Box>
-            </Grid>
+            </Flex>
         </header>
     );
 }

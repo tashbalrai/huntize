@@ -32,6 +32,10 @@ const config: Config = {
                 hb: "6.25rem",
                 ab: "35.938rem",
             },
+            spacing: {
+                box: "26.563rem",
+                sbox: "18.75rem",
+            },
         },
         fontFamily: {
             sans: ["var(--font-inter)"],

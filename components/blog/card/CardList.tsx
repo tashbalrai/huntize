@@ -1,10 +1,11 @@
 import { ICardList } from "@/types/blog";
 import Card from "./Card";
 import Grid from "@/components/ui/Grid";
+import { Flex } from "@/components/ui";
 
 const CardList = ({ cards }: ICardList) => {
     return (
-        <Grid>
+        <Flex>
             {cards.map((card) => {
                 return (
                     <Card
@@ -17,7 +18,7 @@ const CardList = ({ cards }: ICardList) => {
                     />
                 );
             })}
-        </Grid>
+        </Flex>
     );
 };
 

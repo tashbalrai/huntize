@@ -16,8 +16,8 @@ export enum IGridSize {
 
 export default interface ITheme {
     theme: IThemeColor;
-    gridSize: IGridSize;
-    setGridSize?: (size: IGridSize) => void;
+    windowWidth?: number;
+    setWindowWidth?: (width: number) => void;
     setTheme?: (theme: IThemeColor) => void;
 }
 
