@@ -16,12 +16,5 @@ export enum IGridSize {
 
 export default interface ITheme {
     theme: IThemeColor;
-    windowWidth?: number;
-    setWindowWidth?: (width: number) => void;
     setTheme?: (theme: IThemeColor) => void;
-}
-
-export interface ITextTag {
-    children: React.ReactNode;
-    className?: string;
 }

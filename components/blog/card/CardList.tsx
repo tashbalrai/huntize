@@ -1,20 +1,19 @@
-import { ICardList } from "@/types/blog";
+"use client";
+import { ICardList } from "@/types/ui";
 import Card from "./Card";
-import Grid from "@/components/ui/Grid";
 import { Flex } from "@/components/ui";
+import { useBoxAttributes } from "@/utils/theme";
 
-const CardList = ({ cards }: ICardList) => {
+const CardList = ({ data }: ICardList) => {
+    const { width: boxWidth } = useBoxAttributes();
     return (
         <Flex>
-            {cards.map((card) => {
+            {data.map((card) => {
                 return (
                     <Card
                         key={Math.random()}
-                        title={card.title}
-                        excerpt={card.excerpt}
-                        category={card.category}
-                        author={card.author}
-                        publishedAt={card.publishedAt}
+                        data={card}
+                        boxWidth={`${boxWidth / 16}rem`}
                     />
                 );
             })}
