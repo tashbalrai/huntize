@@ -1,9 +1,9 @@
 import Root from "@components/root";
 import Header from "@components/header";
 import CardList from "@components/blog/card";
-import { ICard } from "@/types/blog";
+import { IArticle } from "@/types/ui";
 
-const cards: ICard[] = [
+const cards: IArticle[] = [
     {
         title: "Proof of Behaviour and rewards money can’t buy",
         excerpt:
@@ -90,7 +90,7 @@ export default async function Home() {
     return (
         <Root>
             <Header />
-            <CardList cards={cards} />
+            <CardList data={cards} />
         </Root>
     );
 }

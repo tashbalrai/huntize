@@ -1,10 +1,13 @@
 "use client";
 import React, { createContext, useContext, useState } from "react";
 import ITheme, { IGridSize, IThemeColor } from "@/types/theme";
+import { BOX_COUNT_PER_ROW, BOX_MIN_WIDTH } from "@/app/constants";
 
-const ThemeContext = createContext<ITheme>({
+const defaultThemeSettings = {
     theme: IThemeColor.White,
-});
+};
+
+const ThemeContext = createContext<ITheme>(defaultThemeSettings);
 
 export const ThemeContextProvider = ({
     children,
@@ -12,12 +15,9 @@ export const ThemeContextProvider = ({
     children: React.ReactNode;
 }) => {
     const [theme, setTheme] = useState(IThemeColor.White);
-    const [windowWidth, setWindowWidth] = useState(0);
 
     return (
-        <ThemeContext.Provider
-            value={{ theme, setTheme, windowWidth, setWindowWidth }}
-        >
+        <ThemeContext.Provider value={{ theme, setTheme }}>
             {children}
         </ThemeContext.Provider>
     );
