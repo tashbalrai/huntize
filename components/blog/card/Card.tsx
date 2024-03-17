@@ -1,4 +1,4 @@
-import { H5Tag, P1Tag, P3Tag, P4Tag, Box } from "@components/ui";
+import { Box, H36, P14, P18, S18 } from "@components/ui";
 import { ICard } from "@/types/ui";
 
 const Card = ({ data, boxWidth }: ICard) => {
@@ -6,13 +6,13 @@ const Card = ({ data, boxWidth }: ICard) => {
         <Box height="h-ab" width={boxWidth}>
             <article className="flex flex-col h-full px-5 pt-11 pb-6 justify-between">
                 <div className="flex flex-col gap-8">
-                    <P1Tag>/ {data.category}</P1Tag>
-                    <H5Tag>{data.title}</H5Tag>
-                    <P3Tag>{data.excerpt}</P3Tag>
+                    <S18>/ {data.category}</S18>
+                    <H36>{data.title}</H36>
+                    <P18>{data.excerpt}</P18>
                 </div>
                 <div className="flex flex-row items-baseline gap-2">
-                    <P3Tag>{data.author}</P3Tag>
-                    <P4Tag>{data.publishedAt}</P4Tag>
+                    <P18>{data.author}</P18>
+                    <P14>{data.publishedAt}</P14>
                 </div>
             </article>
         </Box>

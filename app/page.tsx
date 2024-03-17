@@ -2,6 +2,7 @@ import Root from "@components/root";
 import Header from "@components/header";
 import CardList from "@components/blog/card";
 import { IArticle } from "@/types/ui";
+import Footer from "@/components/footer/Footer";
 
 const cards: IArticle[] = [
     {
@@ -91,6 +92,7 @@ export default async function Home() {
         <Root>
             <Header />
             <CardList data={cards} />
+            <Footer />
         </Root>
     );
 }
