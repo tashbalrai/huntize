@@ -1,51 +1,77 @@
-import { ITextTag } from "@/types/theme";
+import { ITextTag } from "@/types/ui";
 
-export const P1Tag = ({ children, className }: ITextTag) => {
-    return <p className={`text-2xl font-bold ${className}`}>{children}</p>;
+export const P20 = ({ children, className = "font-normal" }: ITextTag) => {
+    return <p className={`text-xl ${className}`}>{children}</p>;
 };
 
-export const P2Tag = ({ children, className }: ITextTag) => {
-    return <p className={`text-xl font-normal ${className}`}>{children}</p>;
+export const P18 = ({ children, className = "font-normal" }: ITextTag) => {
+    return <p className={`text-lg ${className}`}>{children}</p>;
 };
 
-export const P3Tag = ({ children, className }: ITextTag) => {
-    return <p className={`text-lg font-medium ${className}`}>{children}</p>;
+export const P14 = ({ children, className = "font-normal" }: ITextTag) => {
+    return <p className={`text-sm ${className}`}>{children}</p>;
 };
 
-export const P4Tag = ({ children, className }: ITextTag) => {
-    return <p className={`text-sm font-normal ${className}`}>{children}</p>;
-};
-
-export const P5Tag = ({ children, className }: ITextTag) => {
-    return <p className={`text-xs font-normal ${className}`}>{children}</p>;
-};
-
-export const H1Tag = ({ children, className }: ITextTag) => {
+export const S18 = ({ children, className = "font-bold" }: ITextTag) => {
     return (
-        <h1 className={`text-7xl font-extrabold ${className}`}>{children}</h1>
+        <strong className={`text-lg text-colorHeadings ${className}`}>
+            {children}
+        </strong>
     );
 };
 
-export const H2Tag = ({ children, className }: ITextTag) => {
+export const S20 = ({ children, className = "font-bold" }: ITextTag) => {
     return (
-        <h2 className={`text-6xl font-extrabold ${className}`}>{children}</h2>
+        <strong className={`text-xl text-colorHeadings ${className}`}>
+            {children}
+        </strong>
     );
 };
 
-export const H3Tag = ({ children, className }: ITextTag) => {
+export const H72 = ({ children, className = "font-extrabold" }: ITextTag) => {
     return (
-        <h3 className={`text-5xl font-extrabold ${className}`}>{children}</h3>
+        <h1 className={`text-7xl text-colorHeadings ${className}`}>
+            {children}
+        </h1>
     );
 };
 
-export const H4Tag = ({ children, className }: ITextTag) => {
-    return <h4 className={`text-4xl font-bold ${className}`}>{children}</h4>;
+export const H60 = ({ children, className = "font-extrabold" }: ITextTag) => {
+    return (
+        <h2 className={`text-6xl text-colorHeadings ${className}`}>
+            {children}
+        </h2>
+    );
 };
 
-export const H5Tag = ({ children, className }: ITextTag) => {
-    return <h5 className={`text-3xl font-bold ${className}`}>{children}</h5>;
+export const H48 = ({ children, className = "font-extrabold" }: ITextTag) => {
+    return (
+        <h3 className={`text-5xl text-colorHeadings ${className}`}>
+            {children}
+        </h3>
+    );
 };
 
-export const H6Tag = ({ children, className }: ITextTag) => {
-    return <h6 className={`text-2xl font-bold ${className}`}>{children}</h6>;
+export const H36 = ({ children, className = "font-bold" }: ITextTag) => {
+    return (
+        <h4 className={`text-4xl text-colorHeadings ${className}`}>
+            {children}
+        </h4>
+    );
+};
+
+export const H30 = ({ children, className = "font-bold" }: ITextTag) => {
+    return (
+        <h5 className={`text-3xl text-colorHeadings ${className}`}>
+            {children}
+        </h5>
+    );
+};
+
+export const H24 = ({ children, className = "font-bold" }: ITextTag) => {
+    return (
+        <h6 className={`text-2xl text-colorHeadings ${className}`}>
+            {children}
+        </h6>
+    );
 };
