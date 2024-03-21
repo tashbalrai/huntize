@@ -27,6 +27,7 @@ const config: Config = {
                 line: "var(--line-color)",
                 footerBg: "var(--color-bg-footer)",
                 footerText: "var(--color-text-footer)",
+                cardHover: "var(--color-bg-theme-card-hover)",
             },
             height: {
                 hb: "6.25rem",

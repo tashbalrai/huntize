@@ -4,6 +4,7 @@ import Card from "./Card";
 import { Box, Flex } from "@/components/ui";
 import { useBoxAttributes } from "@/utils/theme";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const CardList = ({ data }: ICardList) => {
     const { width: boxWidth, boxes } = useBoxAttributes();
