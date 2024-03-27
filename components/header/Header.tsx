@@ -5,22 +5,19 @@ import { useBoxAttributes } from "@/utils/theme";
 import { Box, Flex } from "@components/ui";
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import ThemePreviewBox from "../ui/ThemePreviewBox";
+
+const variants = {
+    hover: {
+        height: "42rem",
+        transition: { type: "spring", duration: 0.8 },
+    },
+};
 
 export default function Header() {
     const theme = useThemeContext();
     const { width: boxWidth, boxes } = useBoxAttributes();
-    let more: React.ReactNode[] = [];
-    for (let i = 0; i < boxes - 5; i++) {
-        more.push(
-            <Box
-                key={`hbox-spacer-${i}`}
-                height="h-hb"
-                width={`${boxWidth / 16}rem`}
-            >
-                &nbsp;
-            </Box>
-        );
-    }
 
     return (
         <header>
@@ -46,16 +43,28 @@ export default function Header() {
                 <Box
                     height="h-hb"
                     width={`${boxWidth / 16}rem`}
-                    boxClass={`${boxes <= 1 ? "hidden" : ""}`}
+                    boxClass={`${boxes <= 3 ? "hidden" : ""}`}
                 >
-                    <div className="h-hb bg-themeBlue"></div>
+                    <motion.div
+                        whileHover="hover"
+                        variants={variants}
+                        className="theme h-hb bg-themeBg hover:cursor-pointer relative"
+                        data-theme="blue"
+                    >
+                        <ThemePreviewBox />
+                    </motion.div>
                 </Box>
                 <Box
                     height="h-hb"
                     width={`${boxWidth / 16}rem`}
-                    boxClass={`${boxes <= 2 ? "hidden" : ""}`}
+                    boxClass={`${boxes <= 3 ? "hidden" : ""}`}
                 >
-                    <div className="h-hb bg-themeDark">
+                    <motion.div
+                        whileHover="hover"
+                        variants={variants}
+                        className="theme h-hb bg-themeBg hover:cursor-pointer relative"
+                        data-theme="dark"
+                    >
                         <div className="h-hb w-full justify-items-center inline-flex justify-center">
                             <Image
                                 src="menu.svg"
@@ -64,16 +73,53 @@ export default function Header() {
                                 height="12"
                             />
                         </div>
-                    </div>
+                    </motion.div>
                 </Box>
                 <Box
                     height="h-hb"
                     width={`${boxWidth / 16}rem`}
                     boxClass={`${boxes <= 3 ? "hidden" : ""}`}
                 >
-                    <div className="h-hb bg-themeOrange"></div>
+                    <motion.div
+                        whileHover="hover"
+                        variants={variants}
+                        className="theme h-hb bg-themeBg hover:cursor-pointer relative"
+                        data-theme="orange"
+                    ></motion.div>
                 </Box>
-                {more}
+                <div
+                    className={`h-hb w-full flex flex-row gap-2 mx-1 ${
+                        boxes > 3 ? "hidden" : ""
+                    }`}
+                >
+                    <motion.div
+                        whileHover="hover"
+                        variants={variants}
+                        data-theme="blue"
+                        className="theme h-hb bg-themeBg w-1/3 hover:cursor-pointer hover:relative"
+                    ></motion.div>
+                    <motion.div
+                        whileHover="hover"
+                        variants={variants}
+                        data-theme="dark"
+                        className="theme h-hb bg-themeBg w-1/3 hover:cursor-pointer hover:relative"
+                    >
+                        <div className="h-hb w-full justify-items-center inline-flex justify-center">
+                            <Image
+                                src="menu.svg"
+                                alt="Huntize"
+                                width="45"
+                                height="12"
+                            />
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        whileHover="hover"
+                        variants={variants}
+                        data-theme="orange"
+                        className="theme h-hb bg-themeBg w-1/3 hover:cursor-pointer hover:relative"
+                    ></motion.div>
+                </div>
             </Flex>
         </header>
     );

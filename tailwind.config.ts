@@ -20,6 +20,7 @@ const config: Config = {
             },
             colors: {
                 colorHeadings: "var(--text-h-color)",
+                themeBg: "var(--body-bg-color)",
                 themeLight: "var(--color-bg-theme-light)",
                 themeDark: "var(--color-bg-theme-dark)",
                 themeBlue: "var(--color-bg-theme-blue)",
