@@ -45,7 +45,7 @@ export default function SplitText({
                         custom={play}
                         variants={variants}
                         key={`char-${i}`}
-                        className="inline-block"
+                        className="inline-block text-bodyText"
                     >
                         {char === "#" ? <>&nbsp;</> : char}
                     </motion.span>

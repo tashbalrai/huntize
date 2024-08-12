@@ -13,7 +13,10 @@ export default function Root({ children }: { children: React.ReactNode }) {
     const theme = useThemeContext();
 
     return (
-        <body className={`${inter.variable} font-sans`}>
+        <body
+            className={`${inter.variable} font-sans theme`}
+            data-theme={theme.theme}
+        >
             <main>{children}</main>
         </body>
     );

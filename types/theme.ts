@@ -1,13 +1,13 @@
 import React from "react";
 
-export enum IThemeColor {
+export enum ThemeColor {
     White = "white",
     Black = "black",
     Blue = "blue",
     Orange = "orange",
 }
 
-export enum IGridSize {
+export enum GridSize {
     One = 1,
     Two = 2,
     Three = 3,
@@ -15,6 +15,6 @@ export enum IGridSize {
 }
 
 export default interface ITheme {
-    theme: IThemeColor;
-    setTheme?: (theme: IThemeColor) => void;
+    theme: ThemeColor;
+    setTheme?: (theme: ThemeColor) => void;
 }

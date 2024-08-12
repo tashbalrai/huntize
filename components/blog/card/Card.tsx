@@ -34,11 +34,13 @@ const Card = ({ data, boxWidth }: ICard) => {
                             text={data.excerpt}
                             play={play}
                             variants={{
-                                from: { opacity: 1 },
+                                from: {
+                                    opacity: 1,
+                                },
                                 to: (hover) =>
                                     hover
                                         ? {
-                                              color: "var(--color-text-highlight)",
+                                              color: "var(--text-highlight-color)",
                                               transition: {
                                                   staggerChildren: 0.01,
                                               },
