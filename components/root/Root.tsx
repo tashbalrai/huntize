@@ -1,7 +1,6 @@
 "use client";
-import { ThemeColor } from "@/types/theme";
 import { Inter } from "next/font/google";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 const inter = Inter({
     subsets: ["latin"],
