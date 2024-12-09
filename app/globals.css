@@ -3,57 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --text-heading-color: #000000;
-        --text-para-color: #302f2f;
-        --line-color: #e3e2e2;
-        --bg-theme-blue: #0760ab;
-        --bg-theme-card-hover: #d9d9d9;
-        --bg-theme-black: #000000;
-        --bg-theme-white: #f5f7fa;
-        --bg-theme-orange: #bd4733;
-        --bg-footer: #000;
-        --text-footer-color: #f5f7fa;
-        --text-highlight-color: #0760ab;
-    }
-
-    .theme[data-theme="black"] {
-        --body-bg-color: var(--bg-theme-black);
-        --text-heading-color: #9b8f8f;
-        --text-para-color: #302f2f;
-        --bg-theme-card-hover: #d9d9d9;
-    }
-
-    .theme[data-theme="white"] {
-        --body-bg-color: var(--bg-theme-white);
-        --text-heading-color: #000000;
-        --text-para-color: #302f2f;
-        --bg-footer: #000;
-        --text-footer-color: #f5f7fa;
-        --bg-theme-card-hover: #d9d9d9;
-    }
-
-    .theme[data-theme="blue"] {
-        --body-bg-color: var(--bg-theme-blue);
-        --text-heading-color: #d0d09b;
-        --text-para-color: #d0d09b;
-        --line-color: #1b6eb2;
-        --bg-theme-card-hover: #0760ab;
-        --text-highlight-color: #7bb2dd;
-        --bg-theme-card-hover: #166baf;
-    }
-
-    .theme[data-theme="orange"] {
-        --body-bg-color: var(--bg-theme-orange);
-        --text-heading-color: #000;
-        --text-para-color: #000;
-        --text-highlight-color: #302f2f;
-        --line-color: #cd4c37;
-        --bg-theme-card-hover: #e85941;
-    }
+    @import "../themes/base.css";
+    @import "../themes/black.css";
 }
 
 body {
-    color: var(--text-para-color);
-    background: var(--body-bg-color);
+    color: var(--text-color);
+    background: var(--bg-body-color);
 }

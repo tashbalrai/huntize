@@ -10,7 +10,7 @@ const Card = ({ data, boxWidth }: ICard) => {
     return (
         <Box height="h-ab" width={boxWidth}>
             <article
-                className="group flex flex-col h-full px-5 pt-11 pb-6 justify-between hover:bg-cardHover hover:cursor-pointer hover:scale-105"
+                className="group flex flex-col h-full px-5 pt-11 pb-6 justify-between hover:bg-hover-bg-card-color hover:cursor-pointer hover:scale-105"
                 onMouseOver={() => setPlay(true)}
                 onMouseOut={() => setPlay(false)}
             >
@@ -29,26 +29,7 @@ const Card = ({ data, boxWidth }: ICard) => {
                     </div>
                     <H36>{data.title}</H36>
 
-                    <P18>
-                        <SplitText
-                            text={data.excerpt}
-                            play={play}
-                            variants={{
-                                from: {
-                                    opacity: 1,
-                                },
-                                to: (hover) =>
-                                    hover
-                                        ? {
-                                              color: "var(--text-highlight-color)",
-                                              transition: {
-                                                  staggerChildren: 0.01,
-                                              },
-                                          }
-                                        : {},
-                            }}
-                        />
-                    </P18>
+                    <P18>{data.excerpt}</P18>
                 </div>
                 <div className="flex flex-row items-baseline gap-2">
                     <P18>{data.author}</P18>

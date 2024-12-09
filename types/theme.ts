@@ -1,10 +1,9 @@
-import React from "react";
-
 export enum ThemeColor {
     White = "white",
     Black = "black",
     Blue = "blue",
     Orange = "orange",
+    System = "system"
 }
 
 export enum GridSize {

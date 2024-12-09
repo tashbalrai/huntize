@@ -1,7 +1,6 @@
 "use client";
 import React, { createContext, useContext, useState } from "react";
-import ITheme, { GridSize, ThemeColor } from "@/types/theme";
-import { BOX_COUNT_PER_ROW, BOX_MIN_WIDTH } from "@/app/constants";
+import ITheme, { ThemeColor } from "@/types/theme";
 
 const defaultThemeSettings = {
     theme: ThemeColor.White,

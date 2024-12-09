@@ -1,7 +1,7 @@
 "use client";
-import React from "react";
+import { ThemeColor } from "@/types/theme";
 import { Inter } from "next/font/google";
-import { useThemeContext } from "@/contexts/ThemeContext";
+import { useEffect, useRef } from "react";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -10,13 +10,16 @@ const inter = Inter({
 });
 
 export default function Root({ children }: { children: React.ReactNode }) {
-    const theme = useThemeContext();
+    useEffect(() => {
+        const themeName = localStorage.getItem("theme-name");
+        //TODO: change this to theme switcher
+        document
+            .querySelector("body")
+            ?.setAttribute("data-theme", themeName as string);
+    }, []);
 
     return (
-        <body
-            className={`${inter.variable} font-sans theme`}
-            data-theme={theme.theme}
-        >
+        <body className={`${inter.variable} font-sans theme`}>
             <main>{children}</main>
         </body>
     );
