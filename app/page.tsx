@@ -6,7 +6,7 @@ import Footer from "@/components/footer/Footer";
 
 const cards: IArticle[] = [
     {
-        title: "Proof of Behaviour and rewards money can’t buy",
+        title: "Proof of Behavior and rewards money can’t buy",
         excerpt:
             "its ability to provide extensive vulnerability coverage and support for a wide range of languages and frameworks.",
         category: "Javascript",
@@ -14,7 +14,23 @@ const cards: IArticle[] = [
         publishedAt: "Today",
     },
     {
-        title: "Proof of Behaviour and rewards money can’t buy",
+        title: "Proof of Behavior and rewards money can’t buy",
+        excerpt:
+            "The effectiveness of a static application security solution hinges on its ability to provide extensive vulnerability coverage and support for a wide range of languages and frameworks.",
+        category: "Javascript",
+        author: "V. Balrai",
+        publishedAt: "Today",
+    },
+    {
+        title: "Proof of Behavior and rewards money can’t buy",
+        excerpt:
+            "The effectiveness of a static application security solution hinges on its ability to provide extensive vulnerability coverage and support for a wide range of languages and frameworks.",
+        category: "Javascript",
+        author: "V. Balrai",
+        publishedAt: "Today",
+    },
+    {
+        title: "Proof of Behavior and rewards money can’t buy",
         excerpt:
             "The effectiveness of a static application security solution hinges on its ability to provide extensive vulnerability coverage and support for a wide range of languages and frameworks.",
         category: "Javascript",
@@ -30,7 +46,7 @@ const cards: IArticle[] = [
         publishedAt: "Today",
     },
     {
-        title: "Proof of Behaviour and rewards money can’t buy",
+        title: "Proof of Behavior and rewards money can’t buy",
         excerpt:
             "The effectiveness of a static application security solution hinges on its ability to provide extensive vulnerability coverage and support for a wide range of languages and frameworks.",
         category: "Javascript",
@@ -38,23 +54,7 @@ const cards: IArticle[] = [
         publishedAt: "Today",
     },
     {
-        title: "Proof of Behaviour and rewards money can’t buy",
-        excerpt:
-            "The effectiveness of a static application security solution hinges on its ability to provide extensive vulnerability coverage and support for a wide range of languages and frameworks.",
-        category: "Javascript",
-        author: "V. Balrai",
-        publishedAt: "Today",
-    },
-    {
-        title: "Proof of Behaviour and rewards money can’t buy",
-        excerpt:
-            "The effectiveness of a static application security solution hinges on its ability to provide extensive vulnerability coverage and support for a wide range of languages and frameworks.",
-        category: "Javascript",
-        author: "V. Balrai",
-        publishedAt: "Today",
-    },
-    {
-        title: "Proof of Behaviour and rewards money can’t buy",
+        title: "Proof of Behavior and rewards money can’t buy",
         excerpt:
             "The effectiveness of a static application security solution hinges on its ability to provide extensive vulnerability coverage and support for a wide range of languages and frameworks.",
         category: "Javascript",

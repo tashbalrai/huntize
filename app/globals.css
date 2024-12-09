@@ -3,46 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --text-h-color: #000000;
-        --text-p-color: #302f2f;
-        --line-color: #e3e2e2;
-        --color-bg-theme-blue: #0760ab;
-        --color-bg-theme-dark: #000000;
-        --color-bg-theme-light: #f5f7fa;
-        --color-bg-theme-orange: #e85941;
-        --color-bg-footer: #000;
-        --color-text-footer: #f5f7fa;
-    }
-
-    html[data-theme="dark"] {
-        --body-bg-color: var(--color-bg-theme-dark);
-        --text-h-color: #000000;
-        --text-p-color: #302f2f;
-    }
-
-    html[data-theme="light"] {
-        --body-bg-color: var(--color-bg-theme-light);
-        --text-h-color: #000000;
-        --text-p-color: #302f2f;
-        --color-bg-footer: #000;
-        --color-text-footer: #f5f7fa;
-    }
-
-    html[data-theme="blue"] {
-        --body-bg-color: var(--color-bg-theme-blue);
-        --text-h-color: #000000;
-        --text-p-color: #302f2f;
-    }
-
-    html[data-theme="orange"] {
-        --body-bg-color: var(--color-bg-theme-orange);
-        --text-h-color: #000000;
-        --text-p-color: #302f2f;
-    }
+    @import "../themes/base.css";
+    @import "../themes/black.css";
 }
 
 body {
-    color: var(--text-p-color);
-    background: var(--body-bg-color);
+    color: var(--text-color);
+    background: var(--bg-body-color);
 }

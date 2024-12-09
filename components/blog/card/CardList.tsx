@@ -4,6 +4,7 @@ import Card from "./Card";
 import { Box, Flex } from "@/components/ui";
 import { useBoxAttributes } from "@/utils/theme";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const CardList = ({ data }: ICardList) => {
     const { width: boxWidth, boxes } = useBoxAttributes();
@@ -18,9 +19,10 @@ const CardList = ({ data }: ICardList) => {
                 <div className="h-ab w-full justify-items-center inline-flex justify-center">
                     <Image
                         src="slogan1.svg"
-                        alt="Huntize"
+                        alt="It's all about hunting the right word."
                         width="281"
                         height="285"
+                        priority={false}
                     />
                 </div>
             </Box>
@@ -40,9 +42,10 @@ const CardList = ({ data }: ICardList) => {
                 <div className="h-ab w-full justify-items-center inline-flex justify-center">
                     <Image
                         src="slogan2.svg"
-                        alt="Huntize"
+                        alt="And, about writing the right words."
                         width="225"
                         height="285"
+                        priority={false}
                     />
                 </div>
             </Box>
