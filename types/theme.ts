@@ -1,9 +1,9 @@
-export enum ThemeColor {
+export enum ThemeNames {
     White = "white",
     Black = "black",
     Blue = "blue",
     Orange = "orange",
-    System = "system"
+    System = "system",
 }
 
 export enum GridSize {
@@ -14,6 +14,6 @@ export enum GridSize {
 }
 
 export default interface ITheme {
-    theme: ThemeColor;
-    setTheme?: (theme: ThemeColor) => void;
+    theme: ThemeNames;
+    setTheme?: (theme: ThemeNames) => void;
 }

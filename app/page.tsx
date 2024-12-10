@@ -1,8 +1,9 @@
-import Root from "@components/root";
+import Body from "@/components/body";
 import Header from "@components/header";
 import CardList from "@components/blog/card";
 import { IArticle } from "@/types/ui";
 import Footer from "@/components/footer/Footer";
+import RootLayout from "./layout";
 
 const cards: IArticle[] = [
     {
@@ -89,10 +90,12 @@ const cards: IArticle[] = [
 
 export default async function Home() {
     return (
-        <Root>
-            <Header />
-            <CardList data={cards} />
-            <Footer />
-        </Root>
+        <RootLayout>
+            <Body>
+                <Header />
+                <CardList data={cards} />
+                <Footer />
+            </Body>
+        </RootLayout>
     );
 }

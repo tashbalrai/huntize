@@ -5,9 +5,10 @@
 @layer base {
     @import "../themes/base.css";
     @import "../themes/black.css";
+    @import "../themes/white.css";
 }
 
 body {
     color: var(--text-color);
-    background: var(--bg-body-color);
+    background-color: var(--bg-body-color);
 }
