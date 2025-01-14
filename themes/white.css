@@ -1,4 +1,4 @@
-:root {
+.theme[data-theme="white"] {
     --bg-body-color: #f5f7fa;
     --grid-color: #e3e2e2;
     --text-color: #302f2f;

@@ -1,12 +1,12 @@
-body[data-theme="black"] {
+.theme[data-theme="black"] {
     --bg-body-color: #1b1c1d;
     --grid-color: #7e7c7c;
     --text-color: #d29696;
     --heading-color: #868484;
-    --sub-heading-color: #626262;
-    --bg-card-color: #141b25;
-    --bg-footer: #adaaaa;
-    --footer-text-color: #101011;
+    --sub-heading-color: #4661d5;
+    --bg-card-color: #12a187;
+    --bg-footer: #486f0d;
+    --text-footer-color: #080870;
 
     --hover-text-color: #b15757;
     --hover-heading-color: #701313;
