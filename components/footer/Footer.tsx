@@ -11,8 +11,8 @@ import { FaMedium } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <footer className="w-full tablet:h-f bg-footerBg py-10 tablet:py-20">
-            <div className="flex flex-col tablet:flex-row text-footerText gap-8 h-full w-3/4 mx-auto">
+        <footer className="w-full tablet:h-f bg-footerBgColor py-10 tablet:py-20">
+            <div className="flex flex-col tablet:flex-row text-footerTextColor gap-8 h-full w-3/4 mx-auto">
                 <div className="flex flex-col justify-between h-full w-full">
                     <div className="flex flex-col gap-4">
                         <strong className="text-5xl font-bold">
