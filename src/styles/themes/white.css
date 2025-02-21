@@ -1,0 +1,15 @@
+[data-theme="white"] {
+    --bg-body-color: #bbd9dc;
+    --bg-header-color: #bbd9dc;
+    --grid-color: #dcf3f5;
+    --text-color: #000;
+    --heading-color: #000;
+    --sub-heading-color: #000;
+    --bg-footer: #d4e5e6;
+    --text-footer-color: #000;
+
+    --hover-text-color: #983d5f;
+    --hover-heading-color: #983d5f;
+    --hover-sub-heading-color: #983d5f;
+    --hover-bg-card-color: #90c4ca;
+}
