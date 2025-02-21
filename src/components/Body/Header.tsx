@@ -11,14 +11,18 @@ export default function Header() {
     return (
         <Flex>
             <Box height="h-[71px]" width={`${(width * boxes) / 16}rem`}>
-                <div className="h-[71px] px-5 flex flex-row">
+                <div className="h-[71px] px-5 flex flex-row items-center justify-between">
                     <div className="h-[71px] px-5 flex flex-row items-center gap-4">
-                        <Logo />
+                        <a href="/">
+                            <Logo />
+                        </a>
                         <div className="text-3xl uppercase font-bold">
-                            Huntize
+                            <a href="/">Huntize</a>
                         </div>
                     </div>
-                    <strong>About Me</strong>
+                    <p className="text-sm">
+                        <a href="#">About Me</a>
+                    </p>
                 </div>
             </Box>
         </Flex>

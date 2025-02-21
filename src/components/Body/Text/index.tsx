@@ -11,7 +11,7 @@ const defaultVariants = {
                 opacity: [0, 1],
                 rotate: [359, 0],
                 transition: {
-                    staggerChildren: 0.03,
+                    staggerChildren: 0.01,
                 },
             };
         }

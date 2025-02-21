@@ -1,7 +1,7 @@
 ---
 ---
 <script>
-    import { BOX_COUNT_PER_ROW, BOX_STD_WIDTH, MOBILE_CUTOFF, MAX_BOXES, BOX_MIN_WIDTH } from "../../utils/constants";
+    import { BOX_COUNT_PER_ROW, BOX_STD_WIDTH, MAX_BOXES } from "../../utils/constants";
     function init() {
     
         window.config = {
@@ -28,7 +28,7 @@
             count = count > MAX_BOXES ? MAX_BOXES : count;
             let width = BOX_STD_WIDTH;
 
-            body.setAttribute("style", `width: ${width * count + 24}px`);
+            body.setAttribute("style", `width: ${width * count }px`);
             
             window.config.boxes = count;
             window.config.boxWidth = width;
