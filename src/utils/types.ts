@@ -1,5 +1,16 @@
 export interface IArticle {
-    [key: string]: any;
+    slug: string;
+    title: string;
+    excerpt: string;
+    description: string;
+    titleImage?: string;
+    category: string;
+    tags: string[];
+    relatedArticles?: IArticle[];
+    publishedAt: Date;
+    author: string;
+    aboutAuthor?: string;
+    authorImage?: string;
 }
 
 export interface ICard {
