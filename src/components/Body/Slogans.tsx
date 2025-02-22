@@ -34,7 +34,7 @@ const Slogans = () => {
     return (
         <>
             <Box height="h-article-height" width={`${boxWidth / 16}rem`}>
-                <div className="h-article-height w-full justify-items-center inline-flex justify-center items-center bg-(--hover-bg-card-color) hover:cursor-pointer">
+                <div className="h-article-height w-full justify-items-center inline-flex justify-center items-center hover:cursor-pointer">
                     <h1
                         onMouseEnter={() => setIsHuntPlaying(true)}
                         onMouseLeave={() => setIsHuntPlaying(false)}
@@ -49,7 +49,7 @@ const Slogans = () => {
                 </div>
             </Box>
             <Box height="h-article-height" width={`${boxWidth / 16}rem`}>
-                <div className="h-article-height w-full justify-items-center inline-flex justify-center items-center bg-(--hover-bg-card-color) hover:cursor-pointer">
+                <div className="h-article-height w-full justify-items-center inline-flex justify-center items-center hover:cursor-pointer">
                     <h1
                         onMouseEnter={() => setIsLearnPlaying(true)}
                         onMouseLeave={() => setIsLearnPlaying(false)}
@@ -64,7 +64,7 @@ const Slogans = () => {
                 </div>
             </Box>
             <Box height="h-article-height" width={`${boxWidth / 16}rem`}>
-                <div className="h-article-height w-full px-4 justify-items-center inline-flex justify-center items-center bg-(--hover-bg-card-color) hover:cursor-pointer">
+                <div className="h-article-height w-full px-4 justify-items-center inline-flex justify-center items-center hover:cursor-pointer">
                     <h1
                         onMouseEnter={() => setIsWritePlaying(true)}
                         onMouseLeave={() => setIsWritePlaying(false)}
@@ -79,7 +79,7 @@ const Slogans = () => {
                 </div>
             </Box>
             <Box height="h-article-height" width={`${boxWidth / 16}rem`}>
-                <div className="h-article-height w-full px-4 justify-items-center inline-flex justify-center items-center bg-(--hover-bg-card-color) hover:cursor-pointer">
+                <div className="h-article-height w-full px-4 justify-items-center inline-flex justify-center items-center hover:cursor-pointer">
                     <h1
                         onMouseEnter={() => setIsInspirePlaying(true)}
                         onMouseLeave={() => setIsInspirePlaying(false)}
