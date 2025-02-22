@@ -17,7 +17,7 @@ const Footer = () => {
                             Have an idea?, Let&apos;s talk.
                         </strong>
                         <p>Or, just say hello. I love to hear from people.</p>
-                        <p className="mt-10">vbalrai [at] gmail [.] com</p>
+                        <p className="text-2xl">vbalrai [at] gmail [.] com</p>
                         <div className="flex flex-rows gap-3 mt-10">
                             <FaLinkedin style={{ fontSize: "1.875rem" }} />
                             <FaFacebook style={{ fontSize: "1.875rem" }} />
