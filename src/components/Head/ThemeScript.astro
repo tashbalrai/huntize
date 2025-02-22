@@ -1,7 +1,9 @@
 ---
 ---
 <script>
-    import { BOX_COUNT_PER_ROW, BOX_STD_WIDTH, MAX_BOXES } from "../../utils/constants";
+    import { BOX_COUNT_PER_ROW, BOX_STD_WIDTH, LOCAL_STORAGE_THEME_VAR_NAME, MAX_BOXES } from "../../utils/constants";
+    import { ThemeNames } from "../../utils/types";
+
     function init() {
     
         window.config = {
@@ -10,7 +12,14 @@
         };
 
         if (window.localStorage) {
-            const themeName = localStorage.getItem("theme-name");
+            const themeName = localStorage.getItem(LOCAL_STORAGE_THEME_VAR_NAME);
+
+            if (!themeName && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document
+                    .querySelector("html")
+                    ?.setAttribute("data-theme", ThemeNames.DARK);
+            }
+            
             if (themeName)
                 document
                     .querySelector("html")
