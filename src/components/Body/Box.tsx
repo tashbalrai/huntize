@@ -12,7 +12,9 @@ export interface IBox {
 const Box = ({ children, height, boxClass, width }: IBox) => {
     return (
         <div
-            className={`border-b border-line w-full border-(--grid-color) ${boxClass}`}
+            className={`border-b border-line w-full border-(--grid-color) ${
+                boxClass ?? ""
+            }`}
             style={width ? { maxWidth: width } : {}}
         >
             <div
